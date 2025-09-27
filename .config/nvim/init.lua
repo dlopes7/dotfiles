@@ -51,6 +51,7 @@ require("telescope").load_extension "file_browser"
 require("oil").setup()
 require("mini.pick").setup()
 require("mini.comment").setup()
+require("mini.ai").setup()
 require("mini.completion").setup({
 	mappings = {
 		force_twostep = '<C-n>',
