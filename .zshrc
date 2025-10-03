@@ -104,7 +104,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias top="btm"
 alias vim="nvim"
-alias code="nvim"
+# alias code="nvim"
+alias cv="uv python pin 3.10 && uv venv --seed && uv pip install .\"[dev]\" && source .venv/bin/activate"
 
 # no proxy on localhost
 # export HTTPS_PROXY='http://100.106.81.113:3128'
@@ -164,3 +165,4 @@ source "$HOME/.env"
 
 export PATH="$HOME/.local/tools:/opt/homebrew/opt/openjdk/bin:$PATH"
 
+autoload -Uz compinit && compinit
